@@ -6464,6 +6464,97 @@ pre code {
   box-sizing: 0;
 }
 
+.technology-page {
+  display: grid;
+  grid-template-columns: 30% 30% auto;
+  grid-template-rows: 200px 250px 250px 250px 250px;
+}
+
+.technology-box {
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #212121;
+  border-radius: 10px;
+}
+
+.technology-box h2 {
+  font-size: 40px;
+}
+
+.technology-box h2:hover {
+  text-decoration: underline;
+  color: #40551e;
+}
+
+.technology-box h1 {
+  font-size: 80px;
+  margin: 1rem;
+}
+
+.technology-box a {
+  text-decoration: none;
+  color: #212121;
+  display: block;
+}
+
+.tech {
+  grid-column: 1/-1;
+  grid-row: 1/1;
+  background-color: #caa095;
+  text-align: center;
+  text-decoration: none;
+}
+
+.css {
+  grid-column: 1/1;
+  grid-row: 2/2;
+  background-color: #caa095;
+  text-align: center;
+}
+
+.html {
+  grid-column: 2/-1;
+  grid-row: 2/2;
+  background-color: #98c2b5;
+  text-align: center;
+}
+
+.js {
+  grid-column: 1/2;
+  grid-row: 3/3;
+  background-color: #aed9df;
+  text-align: center;
+}
+
+.php {
+  grid-column: 2/-1;
+  grid-row: 3/3;
+  background-color: #b6b8a7;
+  text-align: center;
+}
+
+.python {
+  grid-column: 1/-1;
+  grid-row: 4/4;
+  background-color: #9b86ac;
+  text-align: center;
+}
+
+.git {
+  grid-column: 1/1;
+  grid-row: 5/5;
+  background-color: #e7c380;
+  text-align: center;
+}
+
+.sql {
+  grid-column: 2/-1;
+  grid-row: 5/5;
+  background-color: #80ccb5;
+  text-align: center;
+}
+
 /* Under mina övriga imports */
 body {
   background-color: #f9ebe0;
@@ -6481,22 +6572,30 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
+  padding-bottom: 1rem;
 }
 
 p {
   padding-bottom: 1rem;
 }
 
-.header, .site-header {
+.header,
+.site-header {
   display: flex;
   justify-content: space-between;
   background-color: #b2c7a8;
   margin-bottom: 2em;
 }
 
-.title, .logo {
+.title,
+.logo {
   padding: 3em 3em 3em 0;
 }
 

@@ -12,6 +12,9 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import 'normalize';
 
+@import 'technology';
+@import 'technologies';
+
 /* Under mina övriga imports */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
@@ -39,6 +42,7 @@ h4,
 h5,
 h6 {
     font-family: 'Open Sans', sans-serif;
+    padding-bottom: 1rem;
 }
 
 p {
