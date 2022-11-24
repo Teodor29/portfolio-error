@@ -6466,8 +6466,7 @@ pre code {
 
 .technology-page {
   display: grid;
-  grid-template-columns: 30% 30% auto;
-  grid-template-rows: 200px 250px 250px 250px 250px;
+  grid-template-columns: 30% auto;
 }
 
 .technology-box {
@@ -6478,11 +6477,7 @@ pre code {
   border-radius: 10px;
 }
 
-.technology-box h2 {
-  font-size: 40px;
-}
-
-.technology-box h2:hover {
+.technology-box a:hover {
   text-decoration: underline;
   color: #40551e;
 }
@@ -6498,63 +6493,150 @@ pre code {
   display: block;
 }
 
-.tech {
-  grid-column: 1/-1;
-  grid-row: 1/1;
-  background-color: #caa095;
+.list {
+  grid-column: 1/1;
   text-align: center;
   text-decoration: none;
+  font-size: 30px;
+  padding-top: 2rem;
+}
+
+.content {
+  grid-column: 2/2;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .technology-page {
+    grid-template-columns: 90%;
+  }
+  .list {
+    grid-row: 1;
+  }
+  .content {
+    grid-row: 2;
+    grid-column: 1;
+  }
+}
+.technologies-page {
+  display: grid;
+  grid-template-columns: 30% 30% auto;
+  grid-template-rows: 200px 250px 250px 250px 250px;
+}
+
+.technologies-box {
+  margin: 1rem;
+  text-decoration: none;
+  color: #212121;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.technologies-box h2 {
+  font-size: 30px;
+  padding-top: 0.5rem;
+  background-color: #b2c7a8;
+}
+
+.technologies-box h1 {
+  font-size: 80px;
+  margin: 1rem;
+}
+
+.technologies-box a {
+  text-decoration: none;
+  color: #212121;
+  display: block;
+}
+
+.technologies-box a:hover {
+  text-decoration: underline;
+}
+
+.technologies-box img {
+  width: 100%;
+}
+
+.tech {
+  grid-column: 1/-1;
+  grid-row: 1;
 }
 
 .css {
   grid-column: 1/1;
-  grid-row: 2/2;
-  background-color: #caa095;
-  text-align: center;
+  grid-row: 2;
 }
 
 .html {
   grid-column: 2/-1;
-  grid-row: 2/2;
-  background-color: #98c2b5;
-  text-align: center;
+  grid-row: 2;
 }
 
 .js {
   grid-column: 1/2;
-  grid-row: 3/3;
-  background-color: #aed9df;
-  text-align: center;
+  grid-row: 3;
 }
 
 .php {
   grid-column: 2/-1;
-  grid-row: 3/3;
-  background-color: #b6b8a7;
-  text-align: center;
+  grid-row: 3;
 }
 
 .python {
   grid-column: 1/-1;
-  grid-row: 4/4;
-  background-color: #9b86ac;
-  text-align: center;
+  grid-row: 4;
 }
 
 .git {
   grid-column: 1/1;
-  grid-row: 5/5;
-  background-color: #e7c380;
-  text-align: center;
+  grid-row: 5;
 }
 
 .sql {
   grid-column: 2/-1;
-  grid-row: 5/5;
-  background-color: #80ccb5;
-  text-align: center;
+  grid-row: 5;
 }
 
+@media (max-width: 800px) {
+  .technologies-page {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 130px 250px 250px 250px 250px 250px 250px 250px;
+  }
+  .technologies-box h1 {
+    font-size: 50px;
+  }
+  .css {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .html {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .js {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .php {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .python {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  .git {
+    grid-column: 1;
+    grid-row: 7;
+  }
+  .sql {
+    grid-column: 1;
+    grid-row: 8;
+  }
+}
 /* Under mina övriga imports */
 body {
   background-color: #f9ebe0;
