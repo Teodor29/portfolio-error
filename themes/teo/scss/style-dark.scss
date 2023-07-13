@@ -1,0 +1,123 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables-dark';
+
+@import 'blockquotes';
+@import 'code';
+
+@import 'normalize';
+
+@import 'technology';
+@import 'technologies';
+
+@import 'analysis';
+
+/* Under mina övriga imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+
+body {
+    background-color: $background-color;
+    color: $font-color;
+}
+
+.main {
+    min-height: 300px;
+    flex: 1 0 auto;
+    width: 75%;
+    max-width: 1000px;
+    padding-top: 1.5rem;
+    margin: 0 auto;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 1rem;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+a {
+    color: $link-color;
+}
+
+.header,
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $background-alternative-color;
+    height: 100px;
+    a {
+        color: $font-color;
+        text-decoration: none;
+    }
+}
+
+.nav {
+    a {
+        padding: 1rem;
+        background-color: $button-color;
+        border-radius: 1rem;
+        font-weight: 600;
+    }
+    li {
+        padding: 1rem;
+    }
+    ul {
+        padding: 2.5rem;
+    }
+}
+
+
+.title,
+.logo {
+    display: inline-block;
+    padding: 1rem;
+    align-content: center;
+    img {
+        width: 70px;
+    }
+    a {
+        text-align: center;
+        display: flex;
+        margin: auto;
+        p {
+            padding: 35px 0px 0px 1rem;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $font-color;
+    background-color: $background-alternative-color;
+    padding: 2em;
+    margin-top: 1.5rem;
+}
+
+.footer a {
+    color: $font-color;
+}
+
+.footer .social {
+    font-size: 2rem;
+}
+
