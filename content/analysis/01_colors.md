@@ -12,7 +12,7 @@ Jag valde att undersöka twitter, svt nyheter och avanza eftersom jag besöker d
 Metod
 -----------------------
 
-Jag använde mig utav colorzilla för att få fram färgkoderna och dev tools för fonterna
+Jag använde mig utav colorzilla för att få fram färgkoderna och dev tools för fonterna.
 
 Resultat
 -----------------------
